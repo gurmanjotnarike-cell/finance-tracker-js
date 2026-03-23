@@ -120,7 +120,9 @@ left.className = "left"
 // ICON
 const icon = document.createElement("div")
 icon.className = "icon"
-icon.textContent = item.title.charAt(0).toUpperCase()
+icon.textContent = item.title 
+  ? item.title.charAt(0).toUpperCase() 
+  : "?"
 icon.style.background = item.type === "expense" ? "#fdeaea" : "#e6f7ee"
 
 // TEXT BLOCK
